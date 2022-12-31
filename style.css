@@ -1,0 +1,271 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+    background: #252525;
+    text-align: center;
+}
+
+/* ==========================Main wrap for page==*/
+div.wrap {
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* ==========================Header with logo==*/
+div.nav-bar {
+    position: fixed;
+    top: 0px;
+    height: 50px;
+    z-index: 3;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.89) 0%, #6C1E79 100%);
+    -webkit-box-shadow: 0 8px 6px -6px #333;
+    -moz-box-shadow: 0 8px 6px -6px #333;
+    box-shadow: 0 8px 6px -6px #333;
+    align-items: center;
+    display: flex;
+}
+
+/* ==========================Header logo image==*/
+.logo {
+    margin-left: 30px; 
+    margin-right: auto;
+} 
+
+img.logo-image {
+    vertical-align: middle;
+    width: 44px;
+    height: 42px;
+}
+
+.nav-items {
+
+    margin-left: auto; 
+    margin-right: 30px;
+}
+
+.ul {
+    list-style: none;
+    display: inline-block;
+}
+
+.contact-button {
+    text-align: center;
+    padding: 4px 16px;
+    background: black;
+    border-radius: 24px;
+    font-weight: 300;
+    font-size: 24px;
+    color: #E2E2E2;
+    text-decoration: none;
+}
+
+/* header */
+
+.header {
+    position: relative;
+}
+
+/* .img-container {
+    position: relative;
+    
+} */
+
+.header-image {
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.header-layer {
+    background-color: rgba(24, 24, 24, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    /* text-align: center; */
+}
+
+.header-content {
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    color: #E2E2E2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* align-items: center; */
+}
+/* end of header */
+
+/* about-me */
+
+.about-me {
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+/* .img-container {
+    position: relative;
+    
+} */
+
+.about-me-image {
+    padding-left: 30px;
+    width: 30%;
+    height: 30%;
+    object-fit: cover;
+    z-index: 3;
+}
+
+.about-me-layer {
+    background-color: rgba(58, 58, 58, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    z-index: 2;
+    /* align-items: center; */
+}
+
+.about-me-title {
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    color: #E2E2E2;
+    top: 20%;
+    left: 60%;
+    transform: translate(-40%, -40%);
+    /* align-items: center; */
+}
+
+.about-me-text {
+    position: absolute;
+    z-index: 2;
+    text-align: justify;
+    color: #E2E2E2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-30%, -50%);
+    /* align-items: center; */
+}
+/* end of about-me */
+
+/* education-header */
+
+.education-header {
+    position: relative;
+}
+
+/* .img-container {
+    position: relative;
+    
+} */
+
+.education-header-image {
+    left:0;
+    width: 100vw;
+    height: 50vh;
+    object-fit: cover;
+}
+
+.education-header-layer {
+    background-color: rgba(58, 58, 58, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 50vh;
+    /* text-align: center; */
+}
+
+.education-header-content {
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    color: #E2E2E2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* align-items: center; */
+}
+/* end of education-header */
+
+/* education nus */
+
+.education {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.nus-container {
+    background: none;
+    border: 0;
+    max-width: 50%;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.education-image {
+    padding-left: 80px;
+    object-fit: cover;
+    z-index: 2;
+}
+
+/* .education-layer {
+    background-color: rgba(58, 58, 58, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+} */
+
+.education-title {
+
+    z-index: 2;
+    text-align: center;
+    color: #E2E2E2;
+    /* top: 20%;
+    left: 65%;
+    transform: translate(-40%, -40%); */
+    /* align-items: center; */
+    font-size: x-large;
+}
+
+.education-text {
+
+    z-index: 2;
+    text-align: justify;
+    color: #E2E2E2;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    max-width: 100%;
+    font-size: medium;
+}
+
+.back-button-image {
+    margin-left: 30px; 
+    margin-right: auto;
+    z-index: 2;
+}
+
+.next-button-image {
+    margin-left: auto; 
+    margin-right: 0px;
+    z-index: 2;
+}
+/* end of education nus */
