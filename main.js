@@ -186,3 +186,7 @@ function myInterestRight() {
         interestKOK.style.display = "none";
     }
 }
+
+// function twitterLink(){
+
+// }
