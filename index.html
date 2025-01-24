@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <!-- Link to Footer CSS -->
     <!-- <link rel="stylesheet" href="footer.css"> -->
+    <link rel="stylesheet" href="segments/interests.css">
 </head>
 <body>
     
@@ -55,7 +56,7 @@
 
         </div>
 
-        <div class="sub-header">
+        <!-- <div class="sub-header">
 
             <div class="sub-img-container">
                 <img class="sub-header-image" src="images/education1.jpeg" alt="">
@@ -64,10 +65,17 @@
             <div class="sub-header-layer">
                 <div class="sub-header-content">
                     <h1>EDUCATION</h1>
-                    <!-- <p>I am a software developer with a passion for integrating technology with people.</p> -->
                 </div>
             </div>
 
+        </div> -->
+        <div class="image-container">
+            <img src="images/education1.jpeg" alt="Background Image" class="background-image">
+            <div class="overlay">
+                <div class="overlay-title">
+                    <h1>EDUCATION</h1>
+                </div>
+            </div>
         </div>
 
         <!-- <div class="test" id="educationDIV1"></div> -->
@@ -117,7 +125,7 @@
             </div> 
         </section>
 
-        <div class="sub-header">
+        <!-- <div class="sub-header">
 
             <div class="sub-img-container">
                 <img class="sub-header-image" src="images/work.jpeg" alt="">
@@ -126,10 +134,17 @@
             <div class="sub-header-layer">
                 <div class="sub-header-content">
                     <h1>WORK EXPERIENCE</h1>
-                    <!-- <p>I am a software developer with a passion for integrating technology with people.</p> -->
                 </div>
             </div>
 
+        </div> -->
+        <div class="image-container">
+            <img src="images/work.jpeg" alt="Background Image" class="background-image">
+            <div class="overlay">
+                <div class="overlay-title">
+                    <h1>WORK EXPERIENCE</h1>
+                </div>
+            </div>
         </div>
 
         <!-- <div class="test" id="educationDIV1"></div> -->
@@ -208,7 +223,7 @@
             </div> 
         </section>
 
-        <div class="sub-header">
+        <!-- <div class="sub-header">
 
             <div class="sub-img-container">
                 <img class="sub-header-image" src="images/military.png" alt="">
@@ -217,11 +232,19 @@
             <div class="sub-header-layer">
                 <div class="sub-header-content">
                     <h1>MILITARY</h1>
-                    <!-- <p>I am a software developer with a passion for integrating technology with people.</p> -->
                 </div>
             </div>
 
+        </div> -->
+        <div class="image-container">
+            <img src="images/military.png" alt="Background Image" class="background-image">
+            <div class="overlay">
+                <div class="overlay-title">
+                    <h1>MILITARY</h1>
+                </div>
+            </div>
         </div>
+
 
         <div class="about-me">
 
@@ -240,7 +263,7 @@
             </div>
         </div>
 
-        <div class="sub-header">
+        <!-- <div class="sub-header">
 
             <div class="sub-img-container">
                 <img class="sub-header-image" src="images/project.jpeg" alt="">
@@ -252,6 +275,14 @@
                 </div>
             </div>
 
+        </div> -->
+        <div class="image-container">
+            <img src="images/project.jpeg" alt="Background Image" class="background-image">
+            <div class="overlay">
+                <div class="overlay-title">
+                    <h1>PROJECTS</h1>
+                </div>
+            </div>
         </div>
 
         <section id="projectDIV1">
@@ -331,7 +362,7 @@
             </div> 
         </section>
 
-        <div class="sub-header">
+        <!-- <div class="sub-header">
 
             <div class="sub-img-container">
                 <img class="sub-header-image" src="images/interestmain.jpeg" alt="">
@@ -459,8 +490,53 @@
                 <button class="nus-container" onclick="myInterestRight()"><img class="next-button-image" src="images/nextButton.png" alt=""></button>
     
             </div> 
-        </section>
+        </section> -->
+
+        <!-- <script src="script.js"></script>
+        <script>
+            // Load the footer from the footer.html file into the #footer-container div
+            fetch('footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer-container').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading footer:', error));
+        </script> -->
         <!-- end of interest -->
+
+        <!-- start of alternative interest -->
+        <div class="image-container">
+            <img src="images/interestmain.jpeg" alt="Background Image" class="background-image">
+            <div class="overlay">
+                <div class="overlay-title">
+                    <h1>INTERESTS</h1>
+                </div>
+            </div>
+        </div>
+        
+        <section class="grid-box-section">
+            <div class="grid-box">
+                <img src="images/interest1.jpg" alt="Box 1 Image" class="grid-box-image">
+                <h2>Taking Things Apart</h2>
+                <p>My love for engineering started as I took apart a laptop, seeing how every component is put together. Unfortunately I could not reassemble the laptop. Later I started to take apart and fix desktops, laptops, mobile phones, monitors, various home appliances, and even a motorcycle internal combustion engine!</p>
+            </div>
+            <div class="grid-box">
+                <img src="https://via.placeholder.com/200" alt="Box 2 Image" class="grid-box-image">
+                <h2>Sports</h2>
+                <p>This is a short paragraph for Box 2.</p>
+            </div>
+            <div class="grid-box">
+                <img src="https://via.placeholder.com/200" alt="Box 3 Image" class="grid-box-image">
+                <h2>Videography/ editing</h2>
+                <p>This is a short paragraph for Box 3.</p>
+            </div>
+            <div class="grid-box">
+                <img src="https://via.placeholder.com/200" alt="Box 4 Image" class="grid-box-image">
+                <h2>Making Unique Gifts</h2>
+                <p>This is a short paragraph for Box 4.</p>
+            </div>
+        </section>
+        <!-- end of alternative interest -->
         <div class="test-text-header" id="footer">
             <div class="test-text"><h1>CONTACT</h1></div>
             <!-- <div class="test-text"><p>Contact</p></div> -->

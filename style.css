@@ -6,7 +6,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Raleway", sans-serif;
-    background: #252525;
+    background: #141414;
     text-align: center;
 }
 
@@ -102,7 +102,7 @@ img.logo-image {
     transition: background-color 0.3s ease, color 0.3s ease
 }
 
-.back-button-image:hover {
+/* .back-button-image:hover {
     background-color: #fff;
     color: #333;
 }
@@ -110,7 +110,7 @@ img.logo-image {
 .next-button-image:hover {
     background-color: #fff;
     color: #333;
-}
+} */
 
 /* header */
 
@@ -237,7 +237,7 @@ img.logo-image {
 
 .sub-header-content {
     position: absolute;
-    z-index: 2;
+    z-index: 1;
     text-align: center;
     color: #E2E2E2;
     top: 50%;
@@ -381,6 +381,13 @@ img.logo-image {
 
 a {
     color: rgb(0, 162, 255);
+}
+
+/* text */
+h1 {
+    margin-top: 10px;
+    font-size: 30px;
+    color: #ffffff;
 }
 
 /* Mobile view adjustments */
