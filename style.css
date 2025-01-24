@@ -24,22 +24,30 @@ div.nav-bar {
     height: 50px;
     z-index: 3;
     width: 100%;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.89) 0%, #6C1E79 100%);
-    -webkit-box-shadow: 0 8px 6px -6px #333;
-    -moz-box-shadow: 0 8px 6px -6px #333;
+    background: #A7A7A7;
+    /* background: linear-gradient(180deg, rgba(0, 0, 0, 0.89) 0%, #6C1E79 100%); */
+    /* -webkit-box-shadow: 0 8px 6px -6px #333;
+    -moz-box-shadow: 0 8px 6px -6px #333; */
     box-shadow: 0 8px 6px -6px #333;
     align-items: center;
+    justify-content: center;
     display: flex;
 }
 
 /* ==========================Header logo image==*/
 .logo {
-    margin-left: 30px; 
-    margin-right: auto;
+    /* margin-left: 30px; 
+    margin-right: auto; */
+    position: middle;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 } 
 
 img.logo-image {
-    vertical-align: middle;
+    object-fit: contain;
     width: 44px;
     height: 42px;
 }
@@ -57,13 +65,51 @@ img.logo-image {
 
 .contact-button {
     text-align: center;
-    padding: 4px 16px;
-    background: black;
+    padding: 2px 16px;
+    background: transparent;
+    border: 2px solid black;
     border-radius: 24px;
     font-weight: 300;
     font-size: 24px;
-    color: #E2E2E2;
+    color: #000000;
     text-decoration: none;
+    cursor:pointer;
+    transition: background-color 0.3s ease, color 0.3s ease
+}
+
+.contact-button:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+.contact-button:focus {
+    outline: none;
+}
+
+.back-button-image {
+    margin-left: 20px; 
+    margin-right: auto;
+    z-index: 2;
+    cursor:pointer;
+    transition: background-color 0.3s ease, color 0.3s ease
+}
+
+.next-button-image {
+    margin-left: auto; 
+    margin-right: 20px;
+    z-index: 2;
+    cursor:pointer;
+    transition: background-color 0.3s ease, color 0.3s ease
+}
+
+.back-button-image:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+.next-button-image:hover {
+    background-color: #fff;
+    color: #333;
 }
 
 /* header */
@@ -257,17 +303,7 @@ img.logo-image {
     font-size: medium;
 }
 
-.back-button-image {
-    margin-left: 30px; 
-    margin-right: auto;
-    z-index: 2;
-}
 
-.next-button-image {
-    margin-left: auto; 
-    margin-right: 30px;
-    z-index: 2;
-}
 /* end of education nus */
 
 .boxed-image {
@@ -345,4 +381,8 @@ img.logo-image {
 
 a {
     color: rgb(0, 162, 255);
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
 }
