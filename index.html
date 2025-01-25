@@ -55,19 +55,6 @@
 
         </div>
 
-        <!-- <div class="sub-header">
-
-            <div class="sub-img-container">
-                <img class="sub-header-image" src="images/education1.jpeg" alt="">
-            </div>
-
-            <div class="sub-header-layer">
-                <div class="sub-header-content">
-                    <h1>EDUCATION</h1>
-                </div>
-            </div>
-
-        </div> -->
         <div class="header-image-container">
             <img src="images/education1.jpeg" alt="Background Image" class="background-image">
             <div class="header-overlay">
@@ -76,46 +63,13 @@
                 </div>
             </div>
         </div>
-        <!-- new education section -->
-        <!-- <div class="segment-container">
-            <section class="segment" id="educationDIV1">
-                <div class="segment-content">
-                    <div class="image-section">
-                        <img src="images/nus2.jpg" alt="Image 1" class="left-segment-image">
-                        <div class="image-column">
-                            <img src="images/nus1.jpg" alt="Image 2" class="right-segment-image">
-                            <img src="images/nus3.jpg" alt="Image 3" class="right-segment-image">
-                        </div>
-                    </div>
-                    <div class="text-section">
-                        <h2 class="header">National University of Singapore</h2>
-                        <p class="passage">I majored in Computer Engineering with a second major in Innovation and Design. Additionally, I have completed the NUS Overseas College Singapore program which I interned at a start-up while analyzing the company and its target market. I did my technical electives in Internet of Things, Human-Robot Interaction, Interaction Design,  Electric Vehicles and their Grid Integration, Cloud computing and design and Analysis of Algorithms.</p>
-                    </div>
-                </div>
-                <button class="back-button" onclick="goBack()">Back</button>
-                <button class="next-button" onclick="goNext()">Next</button>
-            </section>
-
-
-
-            <div class="dot-indicators">
-                <span class="dot" onclick="showSegment(1)"></span>
-                <span class="dot" onclick="showSegment(2)"></span>
-                <span class="dot" onclick="showSegment(3)"></span>
-            </div>
-        </div>
-        <script src="button.js"></script> -->
-
-        <!-- <div class="test" id="educationDIV1"></div> -->
-        <section id="educationDIV1">
+        <!-- reference section -->
+        <!-- <section id="educationDIV1">
             <div class="segment-content">
                 <button class="back-button-container" onclick="myEducationLeft()">
                     <img class="back-button-image" src="images/backButton.png" alt="">
                 </button>
     
-                <!-- <div class="nus-container">
-                    <img class="education-image" src="images/nus-image.png" alt=""> 
-                </div> -->
                 <div class="image-section">
                     <img src="images/nus2.jpg" alt="Image 1" class="left-segment-image">
                     <div class="image-column">
@@ -125,25 +79,80 @@
                 </div>
 
                 <div class="text-section">
-                    <h2 class="header">National University of Singapore</h2>
-                    <p class="passage">I majored in Computer Engineering with a second major in Innovation and Design. Additionally, I have completed the NUS Overseas College Singapore program which I interned at a start-up while analyzing the company and its target market. I did my technical electives in Internet of Things, Human-Robot Interaction, Interaction Design,  Electric Vehicles and their Grid Integration, Cloud computing and design and Analysis of Algorithms.</p>
+                    <h2>National University of Singapore</h2>
+                    <p>I majored in Computer Engineering with a second major in Innovation and Design. Additionally, I have completed the NUS Overseas College Singapore program which I interned at a start-up while analyzing the company and its target market. I did my technical electives in Internet of Things, Human-Robot Interaction, Interaction Design,  Electric Vehicles and their Grid Integration, Cloud computing and design and Analysis of Algorithms.</p>
                 </div>
     
-                <!-- <div class="nus-container">
-                    <div class="education-title">
-                        <h2>NUS</h2>
-                    </div>
-                    <div class="education-text">
-                        <p>I majored in Computer Engineering with a second major in Innovation and Design. Additionally, I have completed the NUS Overseas College Singapore program which I interned at a start-up while analyzing the company and its target market. I did my technical electives in Internet of Things, Human-Robot Interaction, Interaction Design,  Electric Vehicles and their Grid Integration, Cloud computing and design and Analysis of Algorithms.</p>
-                    </div>
-                </div> -->
-    
                 <button class="next-button-container" onclick="myEducationRight()"><img class="next-button-image" src="images/nextButton.png" alt=""></button>
-    
             </div>
-        </section>
+        </section> -->
+        <div class="segment-container">
+            <button class="back-button-container" onclick="showSection('prev')">
+                <img class="back-button-image" src="images/backButton.png" alt="">
+            </button>
+            <div class="segment-content-container">
+                <!-- copy segment-content css into segment-container -->
+            <section id="educationDIV1" class="segment-content">
+                <div class="image-section">
+                    <img src="images/nus2.jpg" alt="Image 1" class="left-segment-image">
+                    <div class="image-column">
+                        <img src="images/nus1.jpg" alt="Image 2" class="right-segment-image">
+                        <img src="images/nus3.jpg" alt="Image 3" class="right-segment-image">
+                    </div>
+                </div>
+    
+                <div class="text-section">
+                    <h2>National University of Singapore</h2>
+                    <p>I majored in Computer Engineering with a second major in Innovation and Design. Additionally, I have completed the NUS Overseas College Singapore program which I interned at a start-up while analyzing the company and its target market. I did my technical electives in Internet of Things, Human-Robot Interaction, Interaction Design,  Electric Vehicles and their Grid Integration, Cloud computing and design and Analysis of Algorithms.</p>
+                </div>  
+            </section>
+            <section id="educationDIV2" class="segment-content">
+                <div class="image-section">
+                    <img src="images/nus2.jpg" alt="Image 1" class="left-segment-image">
+                    <div class="image-column">
+                        <img src="images/nus1.jpg" alt="Image 2" class="right-segment-image">
+                        <img src="images/nus3.jpg" alt="Image 3" class="right-segment-image">
+                    </div>
+                </div>
+    
+                <div class="text-section">
+                    <h2>Ngee Ann Polytechnic</h2>
+                    <p>I did my Diploma in Engineering Science.</p>
+                </div>  
+            </section>
+            <section id="educationDIV3" class="segment-content">
+                <div class="image-section">
+                    <img src="images/nus2.jpg" alt="Image 1" class="left-segment-image">
+                    <div class="image-column">
+                        <img src="images/nus1.jpg" alt="Image 2" class="right-segment-image">
+                        <img src="images/nus3.jpg" alt="Image 3" class="right-segment-image">
+                    </div>
+                </div>
+
+                <div class="text-section">
+                    <h2>University College London</h2>
+                    <p>Currently doing my Master's in Systems Engineering Management.</p>
+                </div> 
+            </section>
+            </div>
+            
+            <button class="next-button-container" onclick="showSection('next')"><img class="next-button-image" src="images/nextButton.png" alt=""></button>
+            <!-- <div class="toggle-buttons">
+                <button class="back-button-container" onclick="showSection('prev')">
+                    <img class="back-button-image" src="images/backButton.png" alt="">
+                </button>
+                
+            </div> -->
+    
+            <div class="dot-indicators">
+                <span class="dot" id="dot1" onclick="showSectionByDot(0)"></span>
+                <span class="dot" id="dot2" onclick="showSectionByDot(1)"></span>
+                <span class="dot" id="dot3" onclick="showSectionByDot(2)"></span>
+            </div>
+        </div>
+        <script src="button.js"></script>
         
-        <section id="educationDIV2">
+        <!-- <section id="educationDIV2">
             <div class="education">
 
                 <button class="nus-container" onclick="myEducationLeft()"><img class="back-button-image" src="images/backButton.png" alt=""></button>
@@ -164,7 +173,7 @@
                 <button class="nus-container" onclick="myEducationRight()"><img class="next-button-image" src="images/nextButton.png" alt=""></button>
     
             </div> 
-        </section>
+        </section> -->
 
         <!-- <div class="sub-header">
 
@@ -591,6 +600,7 @@
         
     </div>
 
-    <script src="main.js"></script>
+    <!-- <script src="main.js"></script> -->
+     <!-- comment out to test alternate function -->
 </body>
 </html>

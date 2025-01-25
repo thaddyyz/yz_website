@@ -30,7 +30,7 @@ div.nav-bar {
     -moz-box-shadow: 0 8px 6px -6px #333; */
     box-shadow: 0 8px 6px -6px #333;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     display: flex;
 }
 
