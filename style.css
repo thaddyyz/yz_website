@@ -38,7 +38,7 @@ div.nav-bar {
 .logo {
     /* margin-left: 30px; 
     margin-right: auto; */
-    position: middle;
+    /* position: middle; */
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -86,21 +86,6 @@ img.logo-image {
     outline: none;
 }
 
-.back-button-image {
-    margin-left: 20px; 
-    margin-right: auto;
-    z-index: 2;
-    cursor:pointer;
-    transition: background-color 0.3s ease, color 0.3s ease
-}
-
-.next-button-image {
-    margin-left: auto; 
-    margin-right: 20px;
-    z-index: 2;
-    cursor:pointer;
-    transition: background-color 0.3s ease, color 0.3s ease
-}
 
 /* .back-button-image:hover {
     background-color: #fff;
@@ -114,8 +99,9 @@ img.logo-image {
 
 /* header */
 
-.header {
+.title-header-section {
     position: relative;
+    width: 100%;
 }
 
 /* .img-container {
@@ -123,24 +109,24 @@ img.logo-image {
     
 } */
 
-.header-image {
+.title-header-image {
     left:0;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     object-fit: cover;
 }
 
-.header-layer {
+.intro-header-layer {
     background-color: rgba(24, 24, 24, 0.6);
     position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     /* text-align: center; */
 }
 
-.header-content {
+.intro-header-content {
     position: absolute;
     z-index: 2;
     text-align: center;
@@ -150,12 +136,24 @@ img.logo-image {
     transform: translate(-50%, -50%);
     /* align-items: center; */
 }
+.intro-text {
+    font-size: 20px;
+    color: #cccccc;
+    text-align: center;
+}
+
+.intro-header {
+    font-size: 30px;
+    color: #cccccc;
+    text-align: center;
+}
 /* end of header */
 
 /* about-me */
 
 .about-me {
     position: relative;
+    width: 100%;
     padding-top: 30px;
     padding-bottom: 20px;
 }
@@ -178,7 +176,7 @@ img.logo-image {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
     height: 100%;
     z-index: 1;
     /* align-items: center; */
@@ -220,7 +218,7 @@ img.logo-image {
 
 .sub-header-image {
     left:0;
-    width: 100vw;
+    width: 100%;
     height: 50vh;
     object-fit: cover;
 }
@@ -230,7 +228,7 @@ img.logo-image {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
     height: 50vh;
     /* text-align: center; */
 }
@@ -253,16 +251,16 @@ img.logo-image {
     padding-top: 30px;
     padding-bottom: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 .nus-container {
     background: none;
     border: 0;
-    max-width: 50%;
-    display: inline-flex;
-    flex-direction: column;
+    /* max-width: 50%; */
+    /* display: inline-flex; */
+    /* flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
 }
 .education-image {
     padding-left: 60px;

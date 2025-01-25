@@ -10,7 +10,7 @@ body {
 }
 
 /* Image container */
-.image-container {
+.header-image-container {
     position: relative;
     width: 100%;
     height: 500px;
@@ -23,7 +23,7 @@ body {
     object-fit: cover;
 }
 
-.overlay {
+.header-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -72,6 +72,7 @@ body {
 h2 {
     margin-top: 10px;
     font-size: 20px;
+    color: #cccccc;
 }
 
 p {
@@ -79,7 +80,7 @@ p {
     font-size: 14px;
     color: #666;
     text-align: left;
-    text-align: left;
+    
 }
 
 /* Mobile View: Stack boxes vertically */

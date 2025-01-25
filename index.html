@@ -9,6 +9,7 @@
     <!-- Link to Footer CSS -->
     <!-- <link rel="stylesheet" href="footer.css"> -->
     <link rel="stylesheet" href="segments/interests.css">
+    <link rel="stylesheet" href="segments/togglecontent.css">
 </head>
 <body>
     
@@ -24,16 +25,14 @@
             </ul>
         </div>
 
-        <div class="header">
+        <div class="title-header-section">
 
-            <div class="img-container">
-                <img class="header-image" src="images/board-g22fb5ea86_1920.jpg" alt="">
-            </div>
+            <img class="title-header-image" src="images/board-g22fb5ea86_1920.jpg" alt="">
 
-            <div class="header-layer">
-                <div class="header-content">
-                    <h1>Hi! Im Yi Zheng.</h1>
-                    <p>I am a software developer with a passion for integrating technology with people.</p>
+            <div class="intro-header-layer">
+                <div class="intro-header-content">
+                    <div class="intro-header">Hi! Im Yi Zheng.</div>
+                    <div class="intro-text">I am a software developer with a passion for integrating technology with people.</div>
                 </div>
             </div>
 
@@ -69,35 +68,77 @@
             </div>
 
         </div> -->
-        <div class="image-container">
+        <div class="header-image-container">
             <img src="images/education1.jpeg" alt="Background Image" class="background-image">
-            <div class="overlay">
+            <div class="header-overlay">
                 <div class="overlay-title">
                     <h1>EDUCATION</h1>
                 </div>
             </div>
         </div>
+        <!-- new education section -->
+        <!-- <div class="segment-container">
+            <section class="segment" id="educationDIV1">
+                <div class="segment-content">
+                    <div class="image-section">
+                        <img src="images/nus2.jpg" alt="Image 1" class="left-segment-image">
+                        <div class="image-column">
+                            <img src="images/nus1.jpg" alt="Image 2" class="right-segment-image">
+                            <img src="images/nus3.jpg" alt="Image 3" class="right-segment-image">
+                        </div>
+                    </div>
+                    <div class="text-section">
+                        <h2 class="header">National University of Singapore</h2>
+                        <p class="passage">I majored in Computer Engineering with a second major in Innovation and Design. Additionally, I have completed the NUS Overseas College Singapore program which I interned at a start-up while analyzing the company and its target market. I did my technical electives in Internet of Things, Human-Robot Interaction, Interaction Design,  Electric Vehicles and their Grid Integration, Cloud computing and design and Analysis of Algorithms.</p>
+                    </div>
+                </div>
+                <button class="back-button" onclick="goBack()">Back</button>
+                <button class="next-button" onclick="goNext()">Next</button>
+            </section>
+
+
+
+            <div class="dot-indicators">
+                <span class="dot" onclick="showSegment(1)"></span>
+                <span class="dot" onclick="showSegment(2)"></span>
+                <span class="dot" onclick="showSegment(3)"></span>
+            </div>
+        </div>
+        <script src="button.js"></script> -->
 
         <!-- <div class="test" id="educationDIV1"></div> -->
         <section id="educationDIV1">
-            <div class="education">
-
-                <button class="nus-container" onclick="myEducationLeft()"><img class="back-button-image" src="images/backButton.png" alt=""></button>
+            <div class="segment-content">
+                <button class="back-button-container" onclick="myEducationLeft()">
+                    <img class="back-button-image" src="images/backButton.png" alt="">
+                </button>
     
-                <div class="nus-container">
+                <!-- <div class="nus-container">
                     <img class="education-image" src="images/nus-image.png" alt=""> 
+                </div> -->
+                <div class="image-section">
+                    <img src="images/nus2.jpg" alt="Image 1" class="left-segment-image">
+                    <div class="image-column">
+                        <img src="images/nus1.jpg" alt="Image 2" class="right-segment-image">
+                        <img src="images/nus3.jpg" alt="Image 3" class="right-segment-image">
+                    </div>
+                </div>
+
+                <div class="text-section">
+                    <h2 class="header">National University of Singapore</h2>
+                    <p class="passage">I majored in Computer Engineering with a second major in Innovation and Design. Additionally, I have completed the NUS Overseas College Singapore program which I interned at a start-up while analyzing the company and its target market. I did my technical electives in Internet of Things, Human-Robot Interaction, Interaction Design,  Electric Vehicles and their Grid Integration, Cloud computing and design and Analysis of Algorithms.</p>
                 </div>
     
-                <div class="nus-container">
+                <!-- <div class="nus-container">
                     <div class="education-title">
                         <h2>NUS</h2>
                     </div>
                     <div class="education-text">
                         <p>I majored in Computer Engineering with a second major in Innovation and Design. Additionally, I have completed the NUS Overseas College Singapore program which I interned at a start-up while analyzing the company and its target market. I did my technical electives in Internet of Things, Human-Robot Interaction, Interaction Design,  Electric Vehicles and their Grid Integration, Cloud computing and design and Analysis of Algorithms.</p>
                     </div>
-                </div>
+                </div> -->
     
-                <button class="nus-container" onclick="myEducationRight()"><img class="next-button-image" src="images/nextButton.png" alt=""></button>
+                <button class="next-button-container" onclick="myEducationRight()"><img class="next-button-image" src="images/nextButton.png" alt=""></button>
     
             </div>
         </section>
@@ -517,22 +558,22 @@
         <section class="grid-box-section">
             <div class="grid-box">
                 <img src="images/interest1.jpg" alt="Box 1 Image" class="grid-box-image">
-                <h2>Taking Things Apart</h2>
+                <h3>Taking Things Apart</h3>
                 <p>My love for engineering started as I took apart a laptop, seeing how every component is put together. Unfortunately I could not reassemble the laptop. Later I started to take apart and fix desktops, laptops, mobile phones, monitors, various home appliances, and even a motorcycle internal combustion engine!</p>
             </div>
             <div class="grid-box">
                 <img src="https://via.placeholder.com/200" alt="Box 2 Image" class="grid-box-image">
-                <h2>Sports</h2>
+                <h3>Sports</h3>
                 <p>This is a short paragraph for Box 2.</p>
             </div>
             <div class="grid-box">
                 <img src="https://via.placeholder.com/200" alt="Box 3 Image" class="grid-box-image">
-                <h2>Videography/ editing</h2>
+                <h3>Videography/ editing</h3>
                 <p>This is a short paragraph for Box 3.</p>
             </div>
             <div class="grid-box">
                 <img src="https://via.placeholder.com/200" alt="Box 4 Image" class="grid-box-image">
-                <h2>Making Unique Gifts</h2>
+                <h3>Making Unique Gifts</h3>
                 <p>This is a short paragraph for Box 4.</p>
             </div>
         </section>
