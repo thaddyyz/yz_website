@@ -18,6 +18,8 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    /* display: block;
+    overflow: auto; */
 }
 
 .segment-view-container {
@@ -221,17 +223,35 @@ body {
 
 /* Mobile View */
 @media (max-width: 768px) {
+
+    .segment-container {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        width: 100%;
+        height: 700px;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        /* flex-direction: row; */
+        /* justify-content: center; */
+    }
+    
+    .segment-view-container {
+        /* position: absolute; */
+        /* overflow: hidden; */
+        display: flex;
+        height: 100%;
+        width: 90%;
+    }
+    
     .segment-content {
-        padding-top: 30px;
-        padding-bottom: 20px;
+        
         display: flex;
         flex-direction: column;
-        /* justify-content: space-between; */
-        /* justify-content: center; */
         width: 100%;
-        height: auto;
+        height: 100%;
         /* position: absolute; */
-        position: relative;
+        /* overflow: hidden; */
     }
 
     .image-section {
@@ -244,6 +264,7 @@ body {
     }
 
     .text-section {
+        height: auto;
         display: flex;
         flex-direction: column;
         width: 100%;

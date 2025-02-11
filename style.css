@@ -8,6 +8,7 @@ body {
     font-family: "Raleway", sans-serif;
     background: #141414;
     text-align: center;
+    overflow-x: hidden;
 }
 
 /* ==========================Main wrap for page==*/

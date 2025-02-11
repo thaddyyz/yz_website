@@ -1,6 +1,7 @@
 let currentSection = 0;
-const sections = document.querySelectorAll('.segment-content');
-const dots = document.querySelectorAll('.dot');
+// const sections = document.querySelectorAll('.segment-content');
+const dots = document.querySelectorAll('.workdot');
+const sections = document.querySelectorAll('.workDIV');
 
 // mobile view
 // const slider = document.querySelector('.segment-view-container');
