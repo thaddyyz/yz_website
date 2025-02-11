@@ -50,6 +50,17 @@
     width: 50%;
   }
 
+  .image-section.third-layout {
+    width: 50%;
+  }
+
+  .segment-image {
+    border-radius: 24px;
+    /* padding: 10px; */
+    height: 80%;
+    width: 80%;
+  }
+
   .top-image {
     border-radius: 24px;
     padding: 10px;
@@ -280,6 +291,10 @@
       .text-section {
           width: 100%;
           margin-top: 20px; /* Add space between images and text */
+      }
+
+      .nav-button {
+        display: none;
       }
     
       /* .view .image {

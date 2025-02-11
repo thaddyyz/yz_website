@@ -37,14 +37,9 @@ div.nav-bar {
 
 /* ==========================Header logo image==*/
 .logo {
-    /* margin-left: 30px; 
-    margin-right: auto; */
-    /* position: middle; */
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
+    margin-left: 30px; 
+    margin-right: auto;
     align-items: center;
-
 } 
 
 img.logo-image {
@@ -150,167 +145,6 @@ img.logo-image {
 }
 /* end of header */
 
-/* about-me */
-
-.about-me {
-    position: relative;
-    width: 100%;
-    padding-top: 30px;
-    padding-bottom: 20px;
-}
-
-/* .img-container {
-    position: relative;
-    
-} */
-
-.about-me-image {
-    padding-left: 30px;
-    width: 30%;
-    height: 30%;
-    object-fit: cover;
-    z-index: 2;
-}
-
-.about-me-layer {
-    /* background-color: rgba(58, 58, 58, 0.5); */
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    /* align-items: center; */
-}
-
-.about-me-title {
-    position: absolute;
-    z-index: 2;
-    text-align: center;
-    color: #E2E2E2;
-    top: 20%;
-    left: 60%;
-    transform: translate(-40%, -40%);
-    /* align-items: center; */
-}
-
-.about-me-text {
-    position: absolute;
-    z-index: 2;
-    text-align: justify;
-    color: #E2E2E2;
-    top: 50%;
-    left: 50%;
-    transform: translate(-30%, -50%);
-    /* align-items: center; */
-}
-/* end of about-me */
-
-/* education-header */
-
-.sub-header {
-    position: relative;
-}
-
-/* .img-container {
-    position: relative;
-    
-} */
-
-.sub-header-image {
-    left:0;
-    width: 100%;
-    height: 50vh;
-    object-fit: cover;
-}
-
-.sub-header-layer {
-    background-color: rgba(58, 58, 58, 0.5);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 50vh;
-    /* text-align: center; */
-}
-
-.sub-header-content {
-    position: absolute;
-    z-index: 1;
-    text-align: center;
-    color: #E2E2E2;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    /* align-items: center; */
-}
-/* end of education-header */
-
-/* education nus */
-
-.education {
-    padding-top: 30px;
-    padding-bottom: 20px;
-    display: flex;
-    justify-content: center;
-}
-.nus-container {
-    background: none;
-    border: 0;
-    /* max-width: 50%; */
-    /* display: inline-flex; */
-    /* flex-direction: column;
-    align-items: center;
-    justify-content: center; */
-}
-.education-image {
-    padding-left: 60px;
-    object-fit: cover;
-    z-index: 2;
-}
-
-/* .education-layer {
-    background-color: rgba(58, 58, 58, 0.5);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100%;
-} */
-
-.education-title {
-
-    z-index: 2;
-    text-align: center;
-    color: #E2E2E2;
-    /* top: 20%;
-    left: 65%;
-    transform: translate(-40%, -40%); */
-    /* align-items: center; */
-    font-size: x-large;
-}
-
-.education-text {
-
-    z-index: 2;
-    text-align: justify;
-    color: #E2E2E2;
-    /* top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
-    max-width: 100%;
-    font-size: medium;
-}
-
-
-/* end of education nus */
-
-.boxed-image {
-    padding-left: 30px;
-    object-fit: cover;
-    z-index: 2;
-}
-
 /* start of footer */
 .footer-header {
     /* position: absolute;
@@ -337,20 +171,16 @@ img.logo-image {
     /* align-items: center; */
 }
 
-/* .icon-image-button {
-    background: none;
-    border: 0;
-} */
 /* end of footer */
 
-.test-text-header {
+.footer-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding-bottom: 30px;
 }
-.test-text {
+.footer-header-text {
     text-align: center;
     color: #E2E2E2;
 }
@@ -359,23 +189,17 @@ img.logo-image {
     padding-top: 30px;
     padding-bottom: 20px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    /* align-items: center; */
-    /* @media screen and (max-width: 500px) {
-        .column {
-          width: 100%;
-        }
-      } */
 }
-.test-container {
+.icon-container {
     background: none;
     border: 0;
-    /* max-width: 50%; */
-    /* display: inline-flex; */
-    /* justify-content: center; */
-    /* flex-direction: column;
-    align-items: center;
-    justify-content: center; */
+}
+
+.footer-text {
+    color: grey;
+    margin-top: 20px;
 }
 
 a {
@@ -391,4 +215,11 @@ h1 {
 
 /* Mobile view adjustments */
 @media (max-width: 768px) {
+    .icon-image-container {
+        padding-top: 30px;
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 }
