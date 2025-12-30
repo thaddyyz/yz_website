@@ -1,0 +1,338 @@
+.section {
+  width: 100%; /* Ensure section width matches viewport width, accounting for verticle scrollbar */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden; /* Hide overflow */
+}
+
+/* .section-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
+
+.toggle-view-container {
+  display: flex;
+  width: 100%;
+  transition: transform 0.5s ease;
+}
+
+.toggle-view {
+  flex: 0 0 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 40px;
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+.image-section.first-layout {
+  /* padding: 10px; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "left right" "left right";
+  width: 50%;
+}
+
+.image-section.second-layout {
+  /* padding: 10px; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "top top" "bottom bottom";
+  width: 50%;
+}
+
+.image-section.third-layout {
+  flex: 1;
+  max-width: 50%; /* Ensure image container takes up half the width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Prevent overflow */
+}
+
+.single-image {
+  padding: 10px;
+  border-radius: 24px;
+  max-width: 100%; /* Ensure image does not exceed container width */
+  max-height: 100%; /* Ensure image does not exceed container height */
+  width: auto; /* Maintain intrinsic width */
+  height: auto; /* Maintain intrinsic height */
+  object-fit: contain; /* Prevent stretching and maintain aspect ratio */
+}
+
+.segment-image {
+  border-radius: 24px;
+  /* padding: 10px; */
+  height: 80%;
+  width: 80%;
+}
+
+.top-image {
+  border-radius: 24px;
+  padding: 10px;
+  grid-area: top;
+  width: 100%;
+  height: 100%;
+}
+.bottom-left {
+  /* grid-area: left; */
+  border-radius: 24px;
+  padding: 10px;
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+.bottom-right {
+  /* grid-area: right; */
+  border-radius: 24px;
+  padding: 10px;
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bottom-images {
+  grid-area: bottom;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.left-segment-image {
+  border-radius: 24px;
+  padding: 10px;
+  grid-area: left;
+  width: 100%;
+  height: 100%;
+}
+
+.right-segment-image {
+  border-radius: 24px;
+  padding: 10px;
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+}
+
+.image-column {
+  grid-area: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.segment-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.text-section {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 20px;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+  /* place-items: center; */
+  /* vertical-align: middle; */
+}
+
+.text-section h2 {
+  font-size: 24px;
+  /* font-weight: bold; */
+  margin-bottom: 20px;
+
+  /* vertical-align: middle; */
+}
+
+.text-section p {
+  font-size: 16px;
+  margin: 0 auto;
+  /* margin-top: 20px; */
+  /* place-items: center; */
+  /* position: relative; */
+  /* display: inline-block; */
+  /* vertical-align: middle; */
+}
+
+/* .toggle-view .image {
+  flex: 1;
+  height: 300px;
+  background: #ccc;
+  margin-right: 20px;
+  max-width: 50%; 
+}
+
+.toggle-view .content {
+  flex: 1;
+  text-align: left;
+  max-width: 50%; 
+} */
+
+/* .nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+} */
+.nav-button {
+  position: absolute;
+  top: 50%;
+  width: 4%;
+  transform: translateY(-50%);
+  /* background: rgba(0, 0, 0, 0.5); */
+  background: none;
+  color: white;
+  border: none;
+  /* padding: 10px; */
+  cursor: pointer;
+  display: flex;
+  justify-content: space-evenly
+}
+
+/* .back-button-container {
+  background: none;
+  border: 0;
+  position: absolute;
+  left:0px;
+  top: 50%;
+  width: 5%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  z-index: 2; 
+} */
+
+.nav-button.prev {
+  left: 5px;
+}
+
+.nav-button.next {
+  right: 5px;
+}
+
+.button-image {
+  /* margin-left: 20px;  */
+  /* margin-right: auto; */
+  width:70%;
+  z-index: 2;
+  cursor:pointer;
+  /* transition: background-color 0.3s ease, color 0.3s ease */
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background: #ccc;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: #333;
+}
+  
+  /* .nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .nav-button.prev {
+    left: 10px;
+  }
+  
+  .nav-button.next {
+    right: 10px;
+  } */
+
+/* Mobile Styles for Section 2 */
+@media (max-width: 768px) {
+  .section {
+    width: 100%; /* Ensure section width matches viewport width, accounting for verticle scrollbar */
+    min-height: 50vh;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+  }
+    
+  .toggle-view-container {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+
+  .toggle-view {
+    width:100%;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .image-section.first-layout {
+    width: 100%;
+  }
+
+  .image-section.second-layout {
+    width: 100%;
+  }
+
+  .image-section.third-layout {
+    /* flex: 1; */
+    max-width: 100%; /* Ensure image container takes up half the width */
+    display: block;
+    justify-content: center;
+    /* align-items: top; */
+    overflow: hidden; /* Prevent overflow */
+  }
+
+  .single-image {
+    /* display: block; */
+    margin: top;
+    margin: bottom;
+    padding: 0px;
+    border-radius: 24px;
+    width: 100%;
+    /* height: 50%; */
+    object-fit: contain; /* Prevent stretching and maintain aspect ratio */
+  }
+
+  .text-section {
+    flex-direction: column;
+      width: 100%;
+      margin-top: 20px; /* Add space between images and text */
+  }
+
+  .nav-button {
+    display: none;
+  }
+}

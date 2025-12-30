@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="segments/interests.css">
+    <link rel="stylesheet" href="segments/changeview.css">
 </head>
 <body>
     
@@ -16,462 +18,380 @@
                 <img class="logo-image" src="images/logoyz.png" alt="">
             </div>
             <ul class="nav-items">
-                <!-- <a href="#test-text-header" class="contact-button">Contact</a> -->
                 <button class="contact-button" onclick="document.getElementById('footer').scrollIntoView();">Contact</button>
             </ul>
         </div>
+<!-- Section 1 -->
+        <div class="title-header-section">
 
-        <div class="header">
+            <img class="title-header-image" src="images/board-g22fb5ea86_1920.jpg" alt="">
 
-            <div class="img-container">
-                <img class="header-image" src="images/board-g22fb5ea86_1920.jpg" alt="">
-            </div>
-
-            <div class="header-layer">
-                <div class="header-content">
-                    <h1>Hi! Im Yi Zheng.</h1>
-                    <p>I am a software developer with a passion for integrating technology with people.</p>
+            <div class="intro-header-layer">
+                <div class="intro-header-content">
+                    <div class="intro-header">Hi! Im Yi Zheng (Ethan).</div>
+                    <div class="intro-text">I am a software developer with a passion for integrating technology with people.</div>
                 </div>
             </div>
 
         </div>
-
-        <div class="about-me">
-
-            <div class="about-me-container">
-                <img class="about-me-image" src="images/aboutme-image.png" alt="">
-            </div>
-
-            <div class="about-me-layer">
-                <div class="about-me-title">
-                    <h2>About Me</h2>
-                </div>
-                <div class="about-me-text">
-                    <p>I am a software developer, engineer, graphic designer, business enthusiast, a student and a son. I am interested in all things technology, and passionate in integrating technology with its user. I constantly keep myself in tune with the latest technology and its inner workings. I am also fascinated with marketing and market penetration strategies.</p>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="sub-header">
-
-            <div class="sub-img-container">
-                <img class="sub-header-image" src="images/education1.jpeg" alt="">
-            </div>
-
-            <div class="sub-header-layer">
-                <div class="sub-header-content">
-                    <h1>EDUCATION</h1>
-                    <!-- <p>I am a software developer with a passion for integrating technology with people.</p> -->
-                </div>
-            </div>
-
-        </div>
-
-        <!-- <div class="test" id="educationDIV1"></div> -->
-        <section id="educationDIV1">
-            <div class="education">
-
-                <button class="nus-container" onclick="myEducationLeft()"><img class="back-button-image" src="images/backButton.png" alt=""></button>
-    
-                <div class="nus-container">
-                    <img class="education-image" src="images/nus-image.png" alt=""> 
-                </div>
-    
-                <div class="nus-container">
-                    <div class="education-title">
-                        <h2>NUS</h2>
+<!-- Section 2 -->
+        <section class="section">
+            <div class="toggle-view-container">
+                <div class="toggle-view active">
+                    <div class="image-section third-layout">
+                        <img src="images/aboutme-image.png" alt="Image 1" class="single-image">
+                        <!-- <div class="image-column">
+                            <img src="images/army2.jpg" alt="Image 2" class="right-segment-image">
+                            <img src="images/army3.jpg" alt="Image 3" class="right-segment-image">
+                        </div> -->
                     </div>
-                    <div class="education-text">
+                    <div class="text-section">
+                        <h2>About Me</h2>
+                        <p>I am a software developer, engineer, graphic designer, business enthusiast, a student and a son. I am interested in all things technology, and passionate in integrating technology with its user. I constantly keep myself in tune with the latest technology and its inner workings. I am also fascinated with marketing and market penetration strategies.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!-- Section 3: Education Header -->
+        <div class="header-image-container">
+            <img src="images/education1.jpeg" alt="Background Image" class="background-image">
+            <div class="header-overlay">
+                <div class="overlay-title">
+                    <h1>EDUCATION</h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- Alternative Section 4 -->
+        <section class="section section-2">
+            <div class="toggle-view-container">
+                <div class="toggle-view active">
+                    <!-- <div class="image"></div> -->
+                    <div class="image-section first-layout">
+                        <img src="images/nus2.jpg" alt="Image 1" class="left-segment-image">
+                        <div class="image-column">
+                            <img src="images/nus1.jpg" alt="Image 2" class="right-segment-image">
+                            <img src="images/nus3.jpg" alt="Image 3" class="right-segment-image">
+                        </div>
+                    </div>
+                    <!-- <div class="content">
+                    <h2>View 1 Title</h2>
+                    <p>This is the content for view 1.</p>
+                    </div> -->
+                    <div class="text-section">
+                        <h2>National University of Singapore</h2>
                         <p>I majored in Computer Engineering with a second major in Innovation and Design. Additionally, I have completed the NUS Overseas College Singapore program which I interned at a start-up while analyzing the company and its target market. I did my technical electives in Internet of Things, Human-Robot Interaction, Interaction Design,  Electric Vehicles and their Grid Integration, Cloud computing and design and Analysis of Algorithms.</p>
                     </div>
                 </div>
-    
-                <button class="nus-container" onclick="myEducationRight()"><img class="next-button-image" src="images/nextButton.png" alt=""></button>
-    
-            </div>
-        </section>
+                <div class="toggle-view">
+                    <div class="image-section second-layout">
+                        <img src="images/np1.jpg" alt="Image 1" class="top-image">
+                        <div class="bottom-images">
+                            <img src="images/np4.jpg" alt="Image 2" class="bottom-left">
+                            <img src="images/np3.png" alt="Image 3" class="bottom-right">
+                        </div>
+                    </div>
         
-        <section id="educationDIV2">
-            <div class="education">
-
-                <button class="nus-container" onclick="myEducationLeft()"><img class="back-button-image" src="images/backButton.png" alt=""></button>
-    
-                <div class="nus-container">
-                    <img class="education-image" src="images/np-image.png" alt=""> 
-                </div>
-    
-                <div class="nus-container">
-                    <div class="education-title">
+                    <div class="text-section">
                         <h2>Ngee Ann Polytechnic</h2>
-                    </div>
-                    <div class="education-text">
-                        <p>I obtained my diploma in Engineering Science specializing in Automation and Mechatronics Systems.</p>
+                        <p>I did my Diploma in Engineering Science.</p>
                     </div>
                 </div>
-    
-                <button class="nus-container" onclick="myEducationRight()"><img class="next-button-image" src="images/nextButton.png" alt=""></button>
-    
-            </div> 
+                <div class="toggle-view">
+                    <div class="image-section third-layout">
+                        <img src="images/ucl.jpg" alt="Image 1" class="single-image">
+                    </div>
+        
+                    <div class="text-section">
+                        <h2>University College London</h2>
+                        <p>Currently doing my Master's in Systems Engineering Management.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="dots">
+              <span class="dot active"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+            <!-- <button class="nav-button prev">&#10094;</button> -->
+            <!-- <button class="nav-button next">&#10095;</button> -->
+            <button class="nav-button prev">
+                <img class="button-image" src="images/backButton.png" alt="">
+            </button>
+            <button class="nav-button next">
+                <img class="button-image" src="images/nextButton.png" alt="">
+            </button>
         </section>
+        <script src="segments/section2.js"></script>
 
-        <div class="sub-header">
-
-            <div class="sub-img-container">
-                <img class="sub-header-image" src="images/work.jpeg" alt="">
-            </div>
-
-            <div class="sub-header-layer">
-                <div class="sub-header-content">
+        <!-- Section 5: Work Experience Header -->
+        <div class="header-image-container">
+            <img src="images/work.jpeg" alt="Background Image" class="background-image">
+            <div class="header-overlay">
+                <div class="overlay-title">
                     <h1>WORK EXPERIENCE</h1>
-                    <!-- <p>I am a software developer with a passion for integrating technology with people.</p> -->
                 </div>
             </div>
-
         </div>
 
-        <!-- <div class="test" id="educationDIV1"></div> -->
-        <section id="workDIV1">
-            <div class="education">
-
-                <button class="nus-container" onclick="myWorkLeft()"><img class="back-button-image" src="images/backButton.png" alt=""></button>
-    
-                <div class="nus-container">
-                    <img class="boxed-image" src="images/power.png" alt=""> 
-                </div>
-    
-                <div class="nus-container">
-                    <div class="education-title">
-                        <h2>Power Electronics and Firmware Engineer</h2>
+        <!-- Section 6: Work Experience -->
+        <section class="section section-6">
+            <div class="toggle-view-container">
+                <div class="toggle-view active">
+                    <div class="image-section first-layout">
+                        <img src="images/pm2.jpg" alt="Image 1" class="left-segment-image">
+                        <div class="image-column">
+                            <img src="images/pm1.jpg" alt="Image 2" class="right-segment-image">
+                            <img src="images/pm3.jpg" alt="Image 3" class="right-segment-image">
+                        </div>
                     </div>
-                    <div class="education-text">
+        
+                    <div class="text-section">
+                        <h2>Technical Project Manager/Systems Engineer</h2>
                         <p>For this role, I started with setting up a test-bench for the electric motorcycle`s power electronics system including the battery pack and Battery Management System`s (BMS) components enabling remote testing. Besides that, I designed an interface for the engineers to visually observe the battery`s performance while running tests. Subsequently, I moved towards developing the firmware for the BMS, developed a program to generate .dbc files which is required by the firmware to decipher messages over the Controller Area Network (CAN) Bus. Additionally, I worked on developing a charging process to speed up charging at lower cell degradation.</p>
                         <p>Skills picked up: High power electronics, SMD soldering, circuit tracing, VBA, and battery testing planning and process.</p>
-                    </div>
+                    </div> 
                 </div>
-    
-                <button class="nus-container" onclick="myWorkRight()"><img class="next-button-image" src="images/nextButton.png" alt=""></button>
-    
-            </div>
-        </section>
+                <div class="toggle-view">
+                    <div class="image-section first-layout">
+                        <img src="images/power.jpeg" alt="Image 1" class="left-segment-image">
+                        <div class="image-column">
+                            <img src="images/pe2.jpg" alt="Image 2" class="right-segment-image">
+                            <img src="images/pe3.jpg" alt="Image 3" class="right-segment-image">
+                        </div>
+                    </div>
         
-        <section id="workDIV2">
-            <div class="education">
-
-                <button class="nus-container" onclick="myWorkLeft()"><img class="back-button-image" src="images/backButton.png" alt=""></button>
-    
-                <div class="nus-container">
-                    <img class="boxed-image" src="images/software.png" alt=""> 
+                    <div class="text-section">
+                        <h2>Power Electronics and Firmware Engineer</h2>
+                        <p>For this role, I started with setting up a test-bench for the electric motorcycle`s power electronics system including the battery pack and Battery Management System`s (BMS) components enabling remote testing. Besides that, I designed an interface for the engineers to visually observe the battery`s performance while running tests. Subsequently, I moved towards developing the firmware for the BMS, developed a program to generate .dbc files which is required by the firmware to decipher messages over the Controller Area Network (CAN) Bus. Additionally, I worked on developing a charging process to speed up charging at lower cell degradation.</p>
+                        <p>Skills picked up: High power electronics, SMD soldering, circuit tracing, VBA, and battery testing planning and process.</p>
+                    </div> 
                 </div>
-    
-                <div class="nus-container">
-                    <div class="education-title">
-                        <h2>Software Intern</h2>
+                <div class="toggle-view">
+                    <div class="image-section second-layout">
+                        <img src="images/software.jpeg" alt="Image 1" class="top-image">
+                        <div class="bottom-images">
+                            <img src="images/sw1.jpg" alt="Image 2" class="bottom-left">
+                            <img src="images/sw2.jpg" alt="Image 3" class="bottom-right">
+                        </div>
                     </div>
-                    <div class="education-text">
-                        <p>I started at ION Mobility as a Software Intern, and my first task was to develop a system to test state and operations of teh electric motorcycle’s Vehicle Control Unit (VCU). To achieve this I utilized a micro-controller and developed code to run both systematic and randomized inputs to test the VCU’s firmware under various conditions to ensure the robustness of the firmware integrated with the circuit board. I worked with CI/CD to enable a fully automated workflow from deployment to testing.
+        
+                    <div class="text-section">
+                        <h2>Software Intern</h2>
+                        <p>I started at ION Mobility as a Software Intern, and my first task was to develop a system to test state and operations of the electric motorcycle’s Vehicle Control Unit (VCU). To achieve this I utilized a micro-controller and developed code to run both systematic and randomized inputs to test the VCU’s firmware under various conditions to ensure the robustness of the firmware integrated with the circuit board. I worked with CI/CD to enable a fully automated workflow from deployment to testing.
                             Next, I supported my colleague to develop a test-harness for state-flow level testing on MATLAB, Simulink.
                             Subsequently, I worked on developing features on the various controllers on the VCU on the S32K platform, Bluetooth and Wi-Fi chips for LED indicators, mobile connection, and Over the Air programming functionality respectively.
                             Finally, I worked on developing the company’s website at a full-stack level interfacing with AWS then GCP for hosting the website and media reference, and Supabase for user-information.</p>
                     </div>
                 </div>
-    
-                <button class="nus-container" onclick="myWorkRight()"><img class="next-button-image" src="images/nextButton.png" alt=""></button>
-    
-            </div> 
-        </section>
-
-        <section id="workDIV3">
-            <div class="education">
-
-                <button class="nus-container" onclick="myWorkLeft()"><img class="back-button-image" src="images/backButton.png" alt=""></button>
-    
-                <div class="nus-container">
-                    <img class="boxed-image" src="images/project.jpeg" alt=""> 
-                </div>
-    
-                <div class="nus-container">
-                    <div class="education-title">
-                        <h2>Project Developer</h2>
-                        <h6>Shiro-Wa Pte Ltd</h6>
+                <div class="toggle-view">
+                    <div class="image-section first-layout">
+                        <img src="" alt="Image 1" class="left-segment-image">
+                        <div class="image-column">
+                            <img src="" alt="Image 2" class="right-segment-image">
+                            <img src="" alt="Image 3" class="right-segment-image">
+                        </div>
                     </div>
-                    <div class="education-text">
+        
+                    <div class="text-section">
+                        <h2>Project Developer</h2>
                         <p>This was my first development job, which I did immediately after completing my diploma. Initially I was brought in to develop a computer vision program for eye-examinations. However, by the time I joined the company decided to change its trajectory regarding this new project. It was at that point that I suggested to develop a mobile application that could support the company’s marketing efforts.  During the process I did some graphic design for the application, which allowed me the opportunity to do some more graphic design for both advertisement, product labels and packaging.
                             Additionally, I researched and developed new product/service concepts to support the expansion of the business.</p>
+                    </div> 
+                </div>
+            </div>
+            <div class="dots">
+              <span class="dot active"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+            <button class="nav-button prev">
+                <img class="button-image" src="images/backButton.png" alt="">
+            </button>
+            <button class="nav-button next">
+                <img class="button-image" src="images/nextButton.png" alt="">
+            </button>
+        </section>
+        <script src="segments/section6.js"></script>
+
+        <!-- Section 7: Military Header -->
+        <div class="header-image-container">
+            <img src="images/military.png" alt="Background Image" class="background-image">
+            <div class="header-overlay">
+                <div class="overlay-title">
+                    <h1>MILITARY</h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 8: Military -->
+        <section class="section section-2">
+            <div class="toggle-view-container">
+                <div class="toggle-view">
+                    <!-- <div class="image"></div> -->
+                    <div class="image-section first-layout">
+                        <img src="images/army.jpeg" alt="Image 1" class="left-segment-image">
+                        <div class="image-column">
+                            <img src="images/army2.jpg" alt="Image 2" class="right-segment-image">
+                            <img src="images/army3.jpg" alt="Image 3" class="right-segment-image">
+                        </div>
+                    </div>
+                    <!-- <div class="content">
+                    <h2>View 1 Title</h2>
+                    <p>This is the content for view 1.</p>
+                    </div> -->
+                    <div class="text-section">
+                        <h2>HIMARS Platoon Commander</h2>
+                        <p>As a platoon Commander, I was responsible for the welfare and develop of the soldiers under my charge. I was frequently given the opportunity to conduct battalion level activities for more than 400 personnel. I also developed the standard operating procedure for the unit`s field operation with a newly implemented system.
+                            Additionally, I proposed and developed a program to simplify the unit`s safety and hazard reporting process.</p>
                     </div>
                 </div>
-    
-                <button class="nus-container" onclick="myWorkRight()"><img class="next-button-image" src="images/nextButton.png" alt=""></button>
-    
-            </div> 
+            </div>
         </section>
 
-        <div class="sub-header">
-
-            <div class="sub-img-container">
-                <img class="sub-header-image" src="images/military.png" alt="">
-            </div>
-
-            <div class="sub-header-layer">
-                <div class="sub-header-content">
-                    <h1>MILITARY</h1>
-                    <!-- <p>I am a software developer with a passion for integrating technology with people.</p> -->
-                </div>
-            </div>
-
-        </div>
-
-        <div class="about-me">
-
-            <div class="about-me-container">
-                <img class="about-me-image" src="images/officer.png" alt="">
-            </div>
-
-            <div class="about-me-layer">
-                <div class="about-me-title">
-                    <h2>HIMARS PLATOON COMMANDER</h2>
-                </div>
-                <div class="about-me-text">
-                    <p>As a platoon Commander, I was responsible for the welfare and develop of the soldiers under my charge. I was frequently given the opportunity to conduct battalion level activities for more than 400 personnel. I also developed the standard operating procedure for the unit`s field operation with a newly implemented system.
-                        Additionally, I proposed and developed a program to simplify the unit`s safety and hazard reporting process.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="sub-header">
-
-            <div class="sub-img-container">
-                <img class="sub-header-image" src="images/project.jpeg" alt="">
-            </div>
-
-            <div class="sub-header-layer">
-                <div class="sub-header-content">
+        <!-- Section 9: Projects Header -->
+        <div class="header-image-container">
+            <img src="images/project.jpeg" alt="Background Image" class="background-image">
+            <div class="header-overlay">
+                <div class="overlay-title">
                     <h1>PROJECTS</h1>
                 </div>
             </div>
-
         </div>
 
-        <section id="projectDIV1">
-            <div class="education">
-
-                <button class="nus-container" onclick="myProjectLeft()"><img class="back-button-image" src="images/backButton.png" alt=""></button>
-    
-                <div class="nus-container">
-                    <img class="boxed-image" src="images/currentplex.png" alt=""> 
-                </div>
-    
-                <div class="nus-container">
-                    <div class="education-title">
-                        <h2>Currentplex</h2>
+        <!-- Section 10: Projects -->
+        <section class="section section-10">
+            <div class="toggle-view-container">
+                <div class="toggle-view active">
+                    <div class="image-section second-layout">
+                        <img src="images/currentplex1.jpg" alt="Image 1" class="top-image">
+                        <div class="bottom-images">
+                            <img src="images/cp2.jpg" alt="Image 2" class="bottom-left">
+                            <img src="images/cp3.jpg" alt="Image 3" class="bottom-right">
+                        </div>
                     </div>
-                    <div class="education-text">
-                        <p>Currentplex is a self-initiatedproject that aims to overcome the challenges resulting in a poor electric vehicle charging network in countries such as Singapore. It focuses on utilizing adaptable power allocation for mass charging.</p>
+        
+                    <div class="text-section">
+                        <h2>Currentplex</h2>
+                        <p>Currentplex is a self-initiated project that aims to overcome the challenges resulting in a poor electric vehicle charging network in countries such as Singapore. It focuses on utilizing adaptable power allocation for mass charging.</p>
 
                         <a href="https://www.youtube.com/watch?v=HZA7NaRfmnc&t=14s">Video link.</a> 
                         
                         <p>Achievements: James Dyson Awards (National Runner Up), NUS Venture Initiation Program Award.</p>
-                    </div>
+                    </div> 
                 </div>
-    
-                <button class="nus-container" onclick="myProjectRight()"><img class="next-button-image" src="images/nextButton.png" alt=""></button>
-    
-            </div>
-        </section>
+                <div class="toggle-view">
+                    <div class="image-section second-layout">
+                        <img src="images/fsaeR21.jpg" alt="Image 1" class="top-image">
+                        <div class="bottom-images">
+                            <img src="images/fsaer22e.png" alt="Image 2" class="bottom-left">
+                            <img src="images/fsae2.jpg" alt="Image 3" class="bottom-right">
+                        </div>
+                    </div>
         
-        <section id="projectDIV2">
-            <div class="education">
-
-                <button class="nus-container" onclick="myProjectLeft()"><img class="back-button-image" src="images/backButton.png" alt=""></button>
-    
-                <div class="nus-container">
-                    <img class="boxed-image" src="images/fsae.png" alt=""> 
-                </div>
-    
-                <div class="nus-container">
-                    <div class="education-title">
-                        <h2>NUS FSAE</h2>
-                    </div>
-                    <div class="education-text">
+                    <div class="text-section">
+                        <h2>FormulaSAE</h2>
                         <p>NUS FSAE is a school project where we develop a open wheel race car to compete in the international Formula SAE competition hosted by SAE against other university teams around the world. 
-                        I started with working on the Vehicle Control Unit`s operating system, the driver display`s graphical user interface, and the analysis software for performance mapping and tuning. Subsequently, I aided the electrical department to design and implement the current monitoring system and the vehicle`s inter-device communication protocol.</p>
-                        
-                        <a href="http://www.instagram.com/nusformulasae">Instagram link.</a>
+                            I started with working on the Vehicle Control Unit`s operating system, the driver display`s graphical user interface, and the analysis software for performance mapping and tuning. Subsequently, I aided the electrical department to design and implement the current monitoring system and the vehicle`s inter-device communication protocol.</p>
+                            
+                            <a href="http://www.instagram.com/nusformulasae">Instagram link.</a>
+                    </div> 
+                </div>
+                <div class="toggle-view">
+                    <div class="image-section first-layout">
+                        <img src="images/aw1.jpg" alt="Image 1" class="left-segment-image">
+                        <div class="image-column">
+                            <img src="images/np2.png" alt="Image 2" class="right-segment-image">
+                            <img src="images/nus3.jpg" alt="Image 3" class="right-segment-image">
+                        </div>
                     </div>
-                </div>
-    
-                <button class="nus-container" onclick="myProjectRight()"><img class="next-button-image" src="images/nextButton.png" alt=""></button>
-    
-            </div> 
-        </section>
-
-        <section id="projectDIV3">
-            <div class="education">
-
-                <button class="nus-container" onclick="myProjectLeft()"><img class="back-button-image" src="images/backButton.png" alt=""></button>
-    
-                <div class="nus-container">
-                    <img class="boxed-image" src="images/wheelchair.png" alt=""> 
-                </div>
-    
-                <div class="nus-container">
-                    <div class="education-title">
+        
+                    <div class="text-section">
                         <h2>Autonomous Wheelchair</h2>
-                    </div>
-                    <div class="education-text">
                         <p>This was the final year project for my diploma where my team developed a autonomous wheelchair for use in a hospital environment to efficiently transport patients without the need for a accompanying nurse. This helps to overcome the challenge of the lack of nurses in hospitals.
                             I primarily designed the attachments for various components such as indicators, LiDAR, Control box, display mount and other proximity sensors. I also developed the server based asset monitoring system to manage the use of the autonomous wheelchairs in a hospital. Additionally, I developed the control logic for the sensors and indicators, and developed the user interface.</p>
+                    </div> 
+                </div>
+                <div class="toggle-view">
+                    <div class="image-section second-layout">
+                        <img src="images/op1.jpg" alt="Image 1" class="top-image">
+                        <div class="bottom-images">
+                            <img src="images/op2.jpg" alt="Image 2" class="bottom-left">
+                            <img src="images/op3.jpg" alt="Image 3" class="bottom-right">
+                        </div>
+                    </div>
+        
+                    <div class="text-section">
+                        <h2>Other Projects</h2>
+                        <p>I started at ION Mobility as a Software Intern, and my first task was to develop a system to test state and operations of the electric motorcycle’s Vehicle Control Unit (VCU). To achieve this I utilized a micro-controller and developed code to run both systematic and randomized inputs to test the VCU’s firmware under various conditions to ensure the robustness of the firmware integrated with the circuit board. I worked with CI/CD to enable a fully automated workflow from deployment to testing.
+                            Next, I supported my colleague to develop a test-harness for state-flow level testing on MATLAB, Simulink.
+                            Subsequently, I worked on developing features on the various controllers on the VCU on the S32K platform, Bluetooth and Wi-Fi chips for LED indicators, mobile connection, and Over the Air programming functionality respectively.
+                            Finally, I worked on developing the company’s website at a full-stack level interfacing with AWS then GCP for hosting the website and media reference, and Supabase for user-information.</p>
                     </div>
                 </div>
-    
-                <button class="nus-container" onclick="myProjectRight()"><img class="next-button-image" src="images/nextButton.png" alt=""></button>
-    
-            </div> 
-        </section>
-
-        <div class="sub-header">
-
-            <div class="sub-img-container">
-                <img class="sub-header-image" src="images/interestmain.jpeg" alt="">
             </div>
+            
+            <div class="dots">
+              <span class="dot active"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+            <button class="nav-button prev">
+                <img class="button-image" src="images/backButton.png" alt="">
+            </button>
+            <button class="nav-button next">
+                <img class="button-image" src="images/nextButton.png" alt="">
+            </button>
+        </section>
+        <script src="segments/section10.js"></script>
 
-            <div class="sub-header-layer">
-                <div class="sub-header-content">
+        <div class="header-image-container">
+            <img src="images/interestmain.jpeg" alt="Background Image" class="background-image">
+            <div class="header-overlay">
+                <div class="overlay-title">
                     <h1>INTERESTS</h1>
                 </div>
             </div>
-
         </div>
-
-        <section id="interestDIV1">
-            <div class="education">
-
-                <button class="nus-container" onclick="myInterestLeft()"><img class="back-button-image" src="images/backButton.png" alt=""></button>
-    
-                <div class="nus-container">
-                    <img class="boxed-image" src="images/currentplex.png" alt=""> 
-                </div>
-    
-                <div class="nus-container">
-                    <div class="education-title">
-                        <h2>Basketball</h2>
-                    </div>
-                    <div class="education-text">
-                        <p>I have always enjoyed playing basketball with my friends in polytechnic, with my work colleagues and neighbors. I was never really great at it but that was a bonding opportunity as my friends would talk about basketball, teach me drills and help me improve on the sport, and finally have an interest which is common with most people.</p>
-                    </div>
-                </div>
-    
-                <button class="nus-container" onclick="myInterestRight()"><img class="next-button-image" src="images/nextButton.png" alt=""></button>
-    
+        
+        <section class="grid-box-section">
+            <div class="grid-box">
+                <img src="images/interest1.jpg" alt="Box 1 Image" class="grid-box-image">
+                <h3>Taking Things Apart</h3>
+                <p>My love for engineering started as I took apart a laptop, seeing how every component is put together. Unfortunately I could not reassemble the laptop. Later I started to take apart and fix desktops, laptops, mobile phones, monitors, various home appliances, and even a motorcycle internal combustion engine!</p>
+            </div>
+            <div class="grid-box">
+                <img src="images/interest2.jpg" alt="Box 2 Image" class="grid-box-image">
+                <h3>Motorcycles</h3>
+                <p>I have always enjoyed riding motorcycles. At first, it was a cool means of transport. Later, I experienced a culture with motorcycles seeing communities built around the love for such machines, trying different bikes for various activities and sports. My favourite is dirt biking.</p>
+            </div>
+            <div class="grid-box">
+                <img src="images/interest3.jpg" alt="Box 3 Image" class="grid-box-image">
+                <h3>Videography/ editing</h3>
+                <p>I recorded and made my first video in the military, and then I realized how exciting it was and took up every opportunity to make videos for my school development projects and compiled videos for non-academic school activities and organizations.</p>
+                <a href="https://www.youtube.com/@thaddyshome7030">Yi Zheng`s YouTube Channel</a>
+            </div>
+            <div class="grid-box">
+                <img src="images/interest5.jpg" alt="Box 4 Image" class="grid-box-image">
+                <h3>Making Unique Gifts</h3>
+                <p>I loved creativity when giving gifts, as I knew I could never find the perfect gift something people needed or wanted. My solution was to do things differently. It started with giving people fruits and chili with the actual gift inside. Then I found an avenue to creating gifts such as designing personalized graphics and printing them on laptop cases, bottles, and shoes. Usually, it captures an inside joke I had with the receiver, and they loved it which kept me going.</p>
             </div>
         </section>
-        
-        <section id="interestDIV2">
-            <div class="education">
-
-                <button class="nus-container" onclick="myInterestLeft()"><img class="back-button-image" src="images/backButton.png" alt=""></button>
-    
-                <div class="nus-container">
-                    <img class="boxed-image" src="images/fsae.png" alt=""> 
-                </div>
-    
-                <div class="nus-container">
-                    <div class="education-title">
-                        <h2>Taking Things Apart</h2>
-                    </div>
-                    <div class="education-text">
-                        <p>My love for engineering started as I took apart a laptop, seeing how every component is put together. Unfortunately I could not reassemble the laptop. Later I started to take apart and fix desktops, laptops, mobile phones, monitors, various home appliances, and even a motorcycle internal combustion engine!</p>
-                    </div>
-                </div>
-    
-                <button class="nus-container" onclick="myInterestRight()"><img class="next-button-image" src="images/nextButton.png" alt=""></button>
-    
-            </div> 
-        </section>
-
-        <section id="interestDIV3">
-            <div class="education">
-
-                <button class="nus-container" onclick="myInterestLeft()"><img class="back-button-image" src="images/backButton.png" alt=""></button>
-    
-                <div class="nus-container">
-                    <img class="boxed-image" src="images/wheelchair.png" alt=""> 
-                </div>
-    
-                <div class="nus-container">
-                    <div class="education-title">
-                        <h2>Videography & Video Editing</h2>
-                    </div>
-                    <div class="education-text">
-                        <p>I recorded and made my first video in the military, and then I realized how exciting it was and took up every opportunity to make videos for my school development projects and compiled videos for non-academic school activities and organizations.</p>
-                        <a href="https://www.youtube.com/@thaddyshome7030">Yi Zheng`s YouTube Channel</a>
-                    </div>
-                </div>
-    
-                <button class="nus-container" onclick="myInterestRight()"><img class="next-button-image" src="images/nextButton.png" alt=""></button>
-    
-            </div> 
-        </section>
-
-        <section id="interestDIV4">
-            <div class="education">
-
-                <button class="nus-container" onclick="myInterestLeft()"><img class="back-button-image" src="images/backButton.png" alt=""></button>
-    
-                <div class="nus-container">
-                    <img class="boxed-image" src="images/wheelchair.png" alt=""> 
-                </div>
-    
-                <div class="nus-container">
-                    <div class="education-title">
-                        <h2>Making Stuff for Friends</h2>
-                    </div>
-                    <div class="education-text">
-                        <p>I loved creativity when giving gifts, as I knew I could never find the perfect gift something people needed or wanted. My solution was to do things differently. It started with giving people fruits and chili with the actual gift inside. Then I found an avenue to creating gifts such as designing personalized graphics and printing them on laptop cases, bottles, and shoes. Usually, it captures an inside joke I had with the receiver, and they loved it which kept me going.</p>
-                    </div>
-                </div>
-    
-                <button class="nus-container" onclick="myInterestRight()"><img class="next-button-image" src="images/nextButton.png" alt=""></button>
-    
-            </div> 
-        </section>
-
-        <section id="interestDIV5">
-            <div class="education">
-
-                <button class="nus-container" onclick="myInterestLeft()"><img class="back-button-image" src="images/backButton.png" alt=""></button>
-    
-                <div class="nus-container">
-                    <img class="boxed-image" src="images/wheelchair.png" alt=""> 
-                </div>
-    
-                <div class="nus-container">
-                    <div class="education-title">
-                        <h2>Karaoke</h2>
-                    </div>
-                    <div class="education-text">
-                        <p>I used to sing karaoke with my cousins, coming to university I saw how this is a perfect way to get to know and bond with people. I loved it so much that I started organizing sessions with my friends and we had a blast. For who does not love music and singing to their favorite songs with their favorite people?</p>
-                    </div>
-                </div>
-    
-                <button class="nus-container" onclick="myInterestRight()"><img class="next-button-image" src="images/nextButton.png" alt=""></button>
-    
-            </div> 
-        </section>
-        <!-- end of interest -->
-        <div class="test-text-header" id="footer">
-            <div class="test-text"><h1>CONTACT</h1></div>
+        <!-- end of alternative interest -->
+        <div class="footer-section" id="footer">
+            <div class="footer-header-text"><h1>CONTACT</h1></div>
             <!-- <div class="test-text"><p>Contact</p></div> -->
             <div class="icon-img-container">
-                <button class="test-container" onclick="location.href='https://twitter.com/ThaddyYz'"><img class="icon-button-image" src="images/twitter-icon.png" alt=""></button>
-                <button class="test-container" onclick="location.href='https://www.linkedin.com/in/yzteoh/'"><img class="icon-button-image" src="images/linkedin-icon.png" alt=""></button>
-                <button class="test-container" onclick="location.href='mailto: teohyz98@gmail.com'"><img class="icon-button-image" src="images/email-icon.png" alt=""></button>
+                <button class="icon-container" onclick="location.href='https://twitter.com/ThaddyYz'"><img class="icon-button-image" src="images/twitter-icon.png" alt=""></button>
+                <button class="icon-container" onclick="location.href='https://www.linkedin.com/in/yzteoh/'"><img class="icon-button-image" src="images/linkedin-icon.png" alt=""></button>
+                <button class="icon-container" onclick="location.href='mailto: teohyz98@gmail.com'"><img class="icon-button-image" src="images/email-icon.png" alt=""></button>
             </div>
-
+            <p class="footer-text">Designed by Yi Zheng Teoh.</p>
         </div>
         
     </div>
 
-    <script src="main.js"></script>
 </body>
 </html>
