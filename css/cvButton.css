@@ -1,0 +1,112 @@
+/* Hero Section Download Button */
+.hero-buttons {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    animation: fadeInUp 1s ease 0.5s both;
+}
+
+.hero-download-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 14px 30px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(100, 255, 218, 0.3);
+    border-radius: 50px;
+    color: #64ffda;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.hero-download-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(100, 255, 218, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.hero-download-btn:active {
+    transform: translateY(0);
+}
+
+.hero-download-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transition: left 0.6s;
+    z-index: -1;
+}
+
+.hero-download-btn:hover::before {
+    left: 100%;
+}
+
+.hero-download-btn i {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.hero-download-btn:hover i {
+    transform: translateY(2px);
+}
+
+/* Button pulse animation */
+@keyframes pulseGlow {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+}
+
+.hero-download-btn {
+    animation: pulseGlow 2s infinite 2s;
+}
+
+/* Match existing download button in contact section */
+.download-cv-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 25px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(100, 255, 218, 0.3);
+    border-radius: 50px;
+    color: #64ffda;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.download-cv-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(100, 255, 218, 0.3);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .hero-download-btn {
+        padding: 12px 24px;
+        font-size: 1rem;
+    }
+    
+    .hero-buttons {
+        margin: 1.5rem 0;
+    }
+}
