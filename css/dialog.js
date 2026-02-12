@@ -395,8 +395,9 @@ const modalData = {
                     'Developed a peer-to-peer NFC data transfer library in Kotlin for use in Flutter',
                     'Optimised app state flow to reduce API calls with offline-first design',
                     'Learned how to setup environment for developing and publishing apps and website',
+                    'Learned end to end security considerations for a platform that allows users to share data with other users with and without an account',
                     'Developing a scalable backend with a gateway and microservices',
-                    'Developing a diagnostics tool to monitor logs and status from all platforms'
+                    'Developing a diagnostics tool to monitor logs and status from all platforms with NodeJS and Fastify API framework'
                 ]
             }
         ],
